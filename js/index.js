@@ -18,7 +18,7 @@ const sendSearchRequest = () => {
 					item["name"] + " " + "(" + item["symbol"] + ")"
 				);
 				searchResult.appendChild(searchResultText);
-				searchResult.href = `/company.html?symbol=${item["symbol"]}`;
+				searchResult.href = `/stock-API-search/company.html?symbol=${item["symbol"]}`;
 				searchResultItem.append(searchResult);
 				searchResultWrapper.append(searchResultItem);
 				const additionalUrl = `https://stock-exchange-dot-full-stack-course-services.ew.r.appspot.com/api/v3/profile/${item["symbol"]}`;
