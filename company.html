@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Company</title>
+		<link rel="stylesheet" href="./css/styles.css" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="icon" type="image/png" href="/favicon.png" />
+	</head>
+	<body>
+		<div class="meta-wrapper">
+			<div id="wrapper" class="wrapper">
+				<div id="companyWrapper" class="company-wrapper">
+					<div id="loader" class="loader hidden"></div>
+				</div>
+				<div class="history-wrapper" id="historyWrapper">
+					<div id="historyLoader" class="loader hidden"></div>
+					<div>
+						<canvas class="my-chart" id="myChart"></canvas>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="./js/index.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	</body>
+</html>

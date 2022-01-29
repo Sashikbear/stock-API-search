@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Stock Exchange</title>
+		<link rel="stylesheet" href="./css/styles.css" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="icon" type="image/png" href="/favicon.png" />
+	</head>
+	<body>
+		<div id="marquee" class="marquee"></div>
+		<div class="meta-wrapper">
+			<div class="wrapper">
+				<h1>Search Nasdaq Stocks</h1>
+				<div id="searchbar" class="searchbar">
+					<input
+						id="input"
+						class="input"
+						type="text"
+						placeholder="Search.."
+						name="search"
+					/>
+					<button id="button" class="button" type="submit">Search</button>
+					<button id="button2" class="button hidden" type="submit">
+						Clear results
+					</button>
+					<div id="loader" class="loader hidden"></div>
+				</div>
+				<ul id="searchResultWrapper"></ul>
+			</div>
+		</div>
+		<script src="./js/index.js"></script>
+	</body>
+</html>

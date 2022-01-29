@@ -1,0 +1,146 @@
+body {
+	font-family: "Open Sans", sans-serif;
+}
+.meta-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.wrapper {
+	width: 60%;
+	align-items: center;
+	border-radius: 10px;
+	box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.14);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 50px;
+	padding: 50px;
+	background-color: #faf9f6;
+}
+.company-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.searchbar {
+	display: flex;
+	height: 25px;
+}
+.input {
+	border-radius: 10%;
+	border: 1px solid gainsboro;
+}
+.button {
+	background-color: #4285f4;
+	color: #faf9f6;
+	border-radius: 10%;
+	border: 1px solid gainsboro;
+}
+.button:hover {
+	background-color: royalblue;
+	font-weight: bold;
+}
+.loader {
+	border: 5px solid #f3f3f3;
+	border-radius: 50%;
+	border-top: 5px solid royalblue;
+	width: 20px;
+	height: 20px;
+	-webkit-animation: spin 2s linear infinite;
+	animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+	0% {
+		-webkit-transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+	}
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+.hidden {
+	display: none;
+}
+li {
+	list-style-type: none;
+	margin: 15px 0;
+	border-bottom: 1px solid gainsboro;
+}
+a {
+	text-decoration: none;
+	color: slategray;
+}
+a:hover {
+	color: royalblue;
+	font-weight: bold;
+}
+.flex {
+	display: flex;
+	margin: 10px 0;
+}
+.flex > div {
+	margin-right: 10px;
+}
+.green {
+	color: rgb(21, 223, 21);
+	margin-left: 10px;
+}
+.red {
+	color: maroon;
+	margin-left: 10px;
+}
+.grey {
+	color: slategray;
+	margin-left: 15px;
+}
+.image {
+	height: 30px;
+	width: 30px;
+	margin-top: 25px;
+}
+.img {
+	height: 20px;
+	width: 20px;
+	margin-right: 10px;
+}
+.history-wrapper {
+	width: 100%;
+}
+.my-chart {
+	margin-top: 10px;
+	width: 100%;
+}
+.margin {
+	margin: 10px 0;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+@keyframes marquee {
+	0% {
+		visibility: visible;
+	}
+
+	100% {
+		transform: translate3d(-100%, 0, 0);
+	}
+}
+.marquee {
+	display: flex;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-name: marquee;
+	animation-duration: 30s;
+}
